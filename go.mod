@@ -90,3 +90,5 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/owasp-amass/amass/v3 => github.com/vklap/amass3/v3 v3.0.0-20230330132644-34b9aa3a104a

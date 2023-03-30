@@ -12,15 +12,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/owasp-amass/amass/v3/requests"
 	"github.com/caffix/pipeline"
 	"github.com/caffix/queue"
-	"github.com/owasp-amass/resolve"
 	"github.com/miekg/dns"
+	"github.com/owasp-amass/amass/v3/requests"
+	"github.com/owasp-amass/resolve"
 )
 
 const (
-	maxDNSQueryAttempts int           = 50
+	maxDNSQueryAttempts int           = 3
 	maxRcodeServerFails int           = 3
 	initialBackoffDelay time.Duration = 250 * time.Millisecond
 	maximumBackoffDelay time.Duration = 4 * time.Second
